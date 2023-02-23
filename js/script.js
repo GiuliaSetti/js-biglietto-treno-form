@@ -140,5 +140,10 @@ ticketGeneratorEl.addEventListener("click", function(){
 });
 
 
+// bottone annulla
 
+let ticketResetEl = document.getElementById("reset_ticket");
 
+ticketResetEl.addEventListener("click", function(){
+    document.getElementById("details_row").style.display = "none";
+})

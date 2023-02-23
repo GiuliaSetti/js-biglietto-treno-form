@@ -36,6 +36,8 @@
 
 let ticketGeneratorEl = document.getElementById("ticket_generator");
 
+document.getElementById("details_row").style.display = "none";
+
 
 ticketGeneratorEl.addEventListener("click", function(){
 
@@ -120,5 +122,23 @@ ticketGeneratorEl.addEventListener("click", function(){
     // test random cp
     console.log(ticketCodeEl);
 
+    // mostrare il biglietto al click
+
+    document.getElementById("details_name").innerText = userName;
+
+    document.getElementById("ticket_name").innerText = ticketType;
+
+    document.getElementById("train_carriage").innerText = trainCarriageEl;
+
+    document.getElementById("ticket_code").innerText = ticketCodeEl;
+
+    document.getElementById("ticket_price").innerText = fullPrice.toFixed(2) + "€";
+
+    document.getElementById("details_row").style.display = "block";
+
+
 });
+
+
+
 

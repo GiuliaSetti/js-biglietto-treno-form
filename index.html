@@ -5,104 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
 
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Acquista Biglietto</title>
 </head>
-<body>
+<body class="debug">
 
+    
+    
+    <div class="container border">
+      
+        <div class="first_container border"> 
 
-    <div class="container">
-
-
-        
-        <div class="first_container"> 
+            <h1 class="center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
 
             <!-- riga di info -->
-            <div class="info_row">
+            <div class="info_row flex">
 
                 <!-- nome -->
-            <div class="info_name">
+                <div class="info_name">
                 <label for="userName">Nome e Cognome</label>
-                <input type="text" id="userName">
-            </div>
+                <input class="gray border" type="text" id="userName">
+                </div>
                 <!-- chilometri -->
-            <div class="info_km">
-                <label for="userKm">Km da percorrere</label>
-                <input type="number" id="userKm">
-            </div>
+                <div class="info_km">
+                <label for="userKm">Quanti km vuoi percorrere?</label>
+                <input class="gray border" type="number" id="userKm">
+                </div>
 
                 <!-- fascia età -->
-            <div class="info_age">
+                <div class="info_age">
                 <label for="userAge">Fascia d'Età</label>
-                <select id="userAge">
+                <select class="gray border" id="userAge">
                     <option value="Minorenne">Minore di 18 anni</option>
                     <option value="Maggiorenne">Maggiore di 18 anni</option>
                     <option value="Over_65">Maggiore di 65 anni</option>
                 </select>
-            </div>
+                </div>
 
             </div>
 
-            <div class="button_row">
+            <div class="button_row flex">
 
-                <button id="ticket_generator">Genera</button>
-                <button id="reset_ticket">Annulla</button>
+                <button class="button_style border" id="ticket_generator">Genera</button>
+                <button class="button_style border" id="reset_ticket">Annulla</button>
 
             </div>
 
         </div>
 
-        <div class="second_container">
+        <div class="second_container border">
+            <h2 class="center">IL TUO BIGLIETTO</h2>
             <div id="details_row">
-                <div class="passenger_details">
-                    <h3>Nome Passeggero</h3>
-                    <span id="details_name"></span>
-                </div>
+                <div class="row flex border">
 
-                <div class="ticket_details">
-
-                    <div class="details_ticket">
-                        <div class="ticket_type">
-
-                            <h4>Offerta</h4>
-    
-                            <span id="ticket_name"></span>
-
-                        </div>
-
-                        <div class="ticket_carriage">
-                            <h4>Carrozza</h4>
-                            <span id="train_carriage"></span>
-                        </div>
-
-                        <div class="cp_code">
-                            <h4>Codice CP</h4>
-                            <span id="ticket_code"></span>
-                        </div>
-
-                        <div class="ticket_cost">
-                            <h4>Costo Biglietto</h4>
-                            <span id="ticket_price"></span>
-                        </div>
-
+                    <div class="passenger_details">
+                        <h3>Nome Passeggero</h3>
+                        <span id="details_name"></span>
                     </div>
-
+    
+                    
+    
+                    <div class="details_ticket flex">
+                            <div class="ticket_type">
+    
+                                <h4>Offerta</h4>
+        
+                                <span id="ticket_name"></span>
+    
+                            </div>
+    
+                            <div class="ticket_carriage">
+                                <h4>Carrozza</h4>
+                                <span id="train_carriage"></span>
+                            </div>
+    
+                            <div class="cp_code">
+                                <h4>Codice CP</h4>
+                                <span id="ticket_code"></span>
+                            </div>
+    
+                            <div class="ticket_cost">
+                                <h4>Costo Biglietto</h4>
+                                <span id="ticket_price"></span>
+                            </div>
+    
+                    </div>
+    
+                       
+    
                    
 
                 </div>
               
             </div>
         </div>
-
-
-
-
-
-
-
-
 
     </div>
 

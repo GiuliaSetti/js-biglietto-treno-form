@@ -1,0 +1,137 @@
+/* generali */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.border{
+    border-radius: 30px;
+}
+
+.gray{
+    padding: 5px;
+
+    border: 2px white solid;
+
+    color: white;
+    background-color: transparent;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* allineamento test */
+
+.center{
+    text-align: center;
+}
+
+/* stilizzazioni dal gusto discutibile */
+
+.container{
+    max-width: 1200px;
+    margin: 3rem auto;
+
+    padding: 2rem;
+
+    border-radius: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/treno.jpeg);
+    background-size: cover;
+}
+
+
+/* container uno _______________________-*/
+
+.first_container{
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.276);
+    color: white;
+}
+
+/* riga nomi cose e città */
+.info_row{
+    padding-top: 3rem;
+
+    justify-content: space-around;
+    gap: 10px;
+}
+
+
+.info_age select > option{   
+    color: black;
+}
+
+.info_row label{
+    font-weight: bold;
+}
+
+/* riga bottoni */
+
+.button_row{
+
+    justify-content: center;
+    gap: 20px;
+
+    padding: 2rem;
+}
+
+.button_style{
+    padding: 10px 30px;
+
+    border: transparent;
+
+    font-weight: bold;
+}
+
+.button_style:active{
+    color: white;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 1px white solid;
+}
+
+/* secondo container */
+
+
+.second_container{
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.276);
+
+    margin-top: 2rem;
+
+    color: white;
+}
+
+/* contenitore generale */
+.row{  
+    gap: 10px;
+
+    border: 2px solid white;
+
+    margin-top: 2rem;
+    padding: 4rem 2rem;
+}
+
+/* passeggero */
+
+.passenger_details{
+    padding: 2rem 1rem;
+    border-right: 3px solid white;
+}
+
+/* dettagli biglietto */
+
+.details_ticket{
+    justify-content: space-between;
+    gap: 4rem;
+
+    padding: 2rem;
+}

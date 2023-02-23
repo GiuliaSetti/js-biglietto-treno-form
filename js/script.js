@@ -103,5 +103,22 @@ ticketGeneratorEl.addEventListener("click", function(){
 
     }
 
+    // carrozza random
+    let trainCarriageEl = document.getElementById("train_carriage");
+
+    trainCarriageEl = Math.floor(Math.random() * 10 + 1);
+
+    // test random carrozza
+    console.log(trainCarriageEl);
+
+    
+    // codice cp random
+    let ticketCodeEl = document.getElementById("ticket_code");
+
+    ticketCodeEl = Math.floor(Math.random() * 10000 + 1);
+
+    // test random cp
+    console.log(ticketCodeEl);
+
 });
 

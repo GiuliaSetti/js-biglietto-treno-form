@@ -56,7 +56,7 @@ ticketGeneratorEl.addEventListener("click", function(){
     let userKm = userKmEl.value;
 
     // test bottone km
-    console.log(userKm);
+    console.log(userKm + "km");
 
     // fascia età
 
@@ -72,18 +72,36 @@ ticketGeneratorEl.addEventListener("click", function(){
 
     let fullPrice = userKm * 0.21;
 
-    console.log(fullPrice);
-
     if(userAge == "Minorenne"){
 
-        
+        fullPrice = fullPrice - (fullPrice/100) * 20;
 
+        ticketType =  "Biglietto Under18"
+
+        // test biglietto
+        console.log(fullPrice);
+
+        console.log(ticketType =  "Biglietto Under18");
+
+    } else if (userAge == "Over_65"){
+        fullPrice = fullPrice - (fullPrice/100) * 40;
+        
+        ticketType =  "Biglietto Over65"
+
+        // test biglietto
+        console.log(fullPrice);
+
+        console.log(ticketType =  "Biglietto Over65");
+    } else {
+        
+        ticketType =  "Biglietto Standard"
+
+        // test biglietto
+        console.log(fullPrice);
+
+        console.log(ticketType =  "Biglietto Standard");
 
     }
 
-
-
-
 });
-
 

@@ -31,3 +31,59 @@
     ° Biglietto Standard
 
 */
+
+// bottone
+
+let ticketGeneratorEl = document.getElementById("ticket_generator");
+
+
+ticketGeneratorEl.addEventListener("click", function(){
+
+    // nome passeggero
+
+    let userNameEl = document.getElementById("userName");
+
+    let userName = userNameEl.value;
+
+    // test bottone nome
+    console.log(userName);
+
+
+    // km da percorrere
+
+    let userKmEl = document.getElementById("userKm");
+
+    let userKm = userKmEl.value;
+
+    // test bottone km
+    console.log(userKm);
+
+    // fascia età
+
+    let userAgeEl = document.getElementById("userAge");
+
+    let userAge = userAgeEl.value;
+
+    // test bottone age
+    console.log(userAge);
+
+
+    // prezzo biglietto standard
+
+    let fullPrice = userKm * 0.21;
+
+    console.log(fullPrice);
+
+    if(userAge == "Minorenne"){
+
+        
+
+
+    }
+
+
+
+
+});
+
+

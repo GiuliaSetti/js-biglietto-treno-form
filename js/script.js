@@ -16,7 +16,7 @@
 - cliccando su generate si mostrerà il biglietto con info:
 - nome e cognome
 - tipo di biglietto
-- numero carrozza (random da 0 a 8)
+- numero carrozza (random da 0 a 10)
 - codice (random da 0 a 1000)
 - costo biglietto
 
@@ -45,34 +45,35 @@ ticketGeneratorEl.addEventListener("click", function(){
 
     let userNameEl = document.getElementById("userName");
 
-    let userName = userNameEl.value;
+    // let userName = userNameEl.value;
 
     // test bottone nome
-    console.log(userName);
+    console.log(userName.value);
 
 
     // km da percorrere
 
     let userKmEl = document.getElementById("userKm");
 
-    let userKm = userKmEl.value;
+    // let userKm = userKmEl.value;
 
     // test bottone km
-    console.log(userKm + "km");
+    console.log(userKm.value + "km");
 
     // fascia età
 
     let userAgeEl = document.getElementById("userAge");
 
-    let userAge = userAgeEl.value;
+    // let userAge = userAgeEl.value;
 
     // test bottone age
-    console.log(userAge);
+    console.log(userAge.value);
 
 
     // prezzo biglietto standard
 
-    let fullPrice = userKm * 0.21;
+    let fullPrice = userKm.value * 0.21;
+    
 
     if(userAge == "Minorenne"){
 
@@ -124,15 +125,15 @@ ticketGeneratorEl.addEventListener("click", function(){
 
     // mostrare il biglietto al click
 
-    document.getElementById("details_name").innerText = userName;
+    document.getElementById("details_name").innerHTML = userName.value;
 
-    document.getElementById("ticket_name").innerText = ticketType;
+    document.getElementById("ticket_name").innerHTML = ticketType;
 
-    document.getElementById("train_carriage").innerText = trainCarriageEl;
+    document.getElementById("train_carriage").innerHTML = trainCarriageEl;
 
-    document.getElementById("ticket_code").innerText = ticketCodeEl;
+    document.getElementById("ticket_code").innerHTML = ticketCodeEl;
 
-    document.getElementById("ticket_price").innerText = fullPrice.toFixed(2) + "€";
+    document.getElementById("ticket_price").innerHTML = fullPrice.toFixed(2) + "€";
 
     document.getElementById("details_row").style.display = "block";
 
@@ -145,5 +146,14 @@ ticketGeneratorEl.addEventListener("click", function(){
 let ticketResetEl = document.getElementById("reset_ticket");
 
 ticketResetEl.addEventListener("click", function(){
+    
     document.getElementById("details_row").style.display = "none";
-})
+
+
+    // eliminare i campi input
+
+    let userNameEl = document.getElementById("userName").value = "";
+
+    let userKmEl = document.getElementById("userKm").value = "";
+
+});
